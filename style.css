@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Takota';
+    src: url('fontes/Takota-BRa8.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Letra';
+    src: url('fontes/Sacramento-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+
+* {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+:root {
+    --fonte1: 'Takota';
+    --fonte2: 'Letra';
+    --cor1: #36787A;
+    --cor2: #1D6B67;
+    --cor3: #88EEE9;
+    --cor4: #C3EAEE;
+    --cor5: #5B95BD;
+}
+
+body {
+    background-color: var(--cor4);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    min-height: 250px;
+    background-image: linear-gradient(to top, var(--cor1), var(--cor2));
+    
+}
+
+header h1 {
+    color: var(--cor3);
+    font-family: var(--fonte1);
+    font-size: 70px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+main {
+    margin: auto;
+    background-color: white;
+    min-width: 320px;
+    max-width: 1100px;
+    height: 600px;
+
+}
+
+footer {
+    background-color: #5B95BD;
+    min-height: 150px;
+    
+    
+}
+
+footer > p {
+    
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Letra';
+}
+#italic{
+    font-family: none;
+    font-style: italic;
+    font-size: 12pt;
+}
